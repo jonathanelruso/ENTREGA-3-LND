@@ -1,0 +1,110 @@
+/* Form styles */
+
+body {
+    overflow-x: hidden;
+}
+
+.upper-form-container {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.form-container {
+    width: 100vh;
+    border: solid;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+#personal-data-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Labels for the fields */
+#personal-data-form label {
+    color: #111;
+    margin: 1em 0 0.3em;
+}
+
+/* Input fields for text and email */
+#personal-data-form input[type="text"],
+#personal-data-form input[type="email"] {
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    font-size: 1em;
+    color: #111;
+    box-sizing: border-box;
+}
+
+#personal-data-form input[type="text"]:focus,
+#personal-data-form input[type="email"]:focus {
+    background-color: #fff;
+    border-color: #a0a0a0;
+    outline: none;
+}
+
+/* Validation messages */
+#personal-data-form span {
+    color: #d9534f;
+    font-size: 0.85em;
+    margin-top: 0.3em;
+}
+
+/* Submit button */
+.form-submit {
+    margin-top: 1.5em;
+}
+
+.form-submit button {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    padding: 0.8em;
+    border-radius: 5px;
+    background-color: #febd69;
+    color: #111;
+    border: 1px solid #c8975d;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-submit button:hover {
+    background-color: #f3a847;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .upper-form-container {
+        transform: scale(0.8);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .upper-form-container {
+        transform: scale(0.82);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .upper-form-container {
+        transform: scale(0.86);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .upper-form-container {
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .upper-form-container {
+        transform: scale(0.95);
+    }
+}
