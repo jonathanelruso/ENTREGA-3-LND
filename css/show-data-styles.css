@@ -1,0 +1,116 @@
+    .upper-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  
+  .container {
+    width: 100vh;
+    border-radius: 15px;
+    padding: 30px;
+  }
+  
+  .h1 {
+    font-size: 40px;
+    -webkit-text-stroke: 3px white;
+    color: transparent;
+    transition: 0.5s;
+    text-shadow: 5px 5px 5px aqua, 7px 7px 0px #e601c0, 9px 9px 0px #e9019a,
+      11px 11px 0px #f40448;
+  }
+  
+  .h1:hover {
+    text-shadow: none;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 1em 0;
+    font-size: 2em;
+  }
+  
+  .data-container {
+    width: 100%;
+    max-width: 100%;
+    border: 2px black;
+    border-radius: 5px;
+    border: solid;
+    padding: 1em;
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+  }
+  
+  .data-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    padding: 0.5em 0;
+  }
+  
+  .data-label {
+    font-weight: bold;
+    width: 30%;
+  }
+  
+  .data-value {
+    width: 65%;
+    padding: 0.5em;
+    background-color: var(--input-color);
+    border-radius: 3px;
+    border-bottom: 1px solid black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .footer-container {
+    text-align: center;
+    height: 89.5px;
+    margin-bottom: 0;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .upper-container {
+      transform: scale(0.7);
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .upper-container {
+      transform: scale(0.75);
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .upper-container {
+      transform: scale(0.8);
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .upper-container {
+      transform: scale(0.91);
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .upper-container {
+      transform: scale(1.1);
+      padding: 0px;
+    }
+  }
