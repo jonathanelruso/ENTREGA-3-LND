@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 14vh;
+    height: 12vh;
     padding: 10px 20px;
     background: linear-gradient(#08039f, #777fd9) padding-box;;
     color: white;
@@ -47,7 +47,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 16px;
+    gap: 36px;
 }
 
 .nav-menu ul li a {
@@ -71,6 +71,71 @@ body {
     cursor: pointer;
 }
 
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.footer-title {
+    font-size: 1.5em;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+footer ul li {
+    margin: 10px 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: thin;
+}
+
+footer ul li a:hover {
+    color: #a5a3a3;
+}
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+    width: 100%;
+}
+
+.social-media-icons a {
+    color: #a5a3a3;
+    font-size: 1.1em;
+}
+
+.social-media-icons a:hover {
+    color: #fff;
+}
+.info-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0;
+    font-size: 12px;
+}
+.info-container {
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+    gap: 20px;
+}
+
+.footer-list-header {
+    font-size: 0.9em;
+    color: #949393;
+}
 /* Animación de apertura de menú*/
 @-webkit-keyframes scale-in-ver-top {
     0% {
@@ -212,6 +277,26 @@ body {
     .logo h1 {
         font-size: 30px;
     }
+
+    .footer-title {
+        font-size: 1.2em;
+    }
+
+    .social-media-icons {
+        flex-direction: row ;
+        gap: 10px;
+    }
+
+    .social-media-icons a {
+        font-size: 1.2em;
+    }
+
+    .info-container {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0;
+        font-size: 12px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -259,14 +344,12 @@ body {
 
     .nav-menu li {
         width: 100%;
-        /* Asegura que cada elemento ocupe todo el ancho */
         text-align: center;
         padding: 10px 0;
     }
 
     .nav-menu li a {
         display: block;
-        /* Cada enlace ocupa una línea completa */
         width: 100%;
         color: white;
         text-decoration: none;
@@ -274,6 +357,7 @@ body {
         padding: 10px 0;
         transition: background 0.3s, color 0.3s;
     }
+    
 
     .menu-toggle {
         display: block;
@@ -282,6 +366,22 @@ body {
 
     .logo h1 {
         font-size: 30px;
+    }
+
+    .social-media-icons {
+        flex-direction: row ;
+        gap: 10px;
+    }
+
+    .social-media-icons a {
+        font-size: 1.3em;
+    }
+
+    .info-container {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0;
+        font-size: 12px;
     }
 }
 
@@ -293,6 +393,39 @@ body {
     .logo h1 {
         font-size: 30px;
     }
+
+    .nav-menu ul {
+        gap: 24px;
+    }
+
+    .nav-menu ul li a {
+        font-size: 20px;
+    }
+
+    .social-media-icons {
+        flex-direction: row ;
+        gap: 10px;
+    }
+
+    .social-media-icons a {
+        font-size: 1.4em;
+    }
+
+    .social-media-icons {
+        flex-direction: row ;
+        gap: 10px;
+    }
+
+    .social-media-icons a {
+        font-size: 1.4em;
+    }
+
+    .info-container {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0;
+        font-size: 14px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -300,11 +433,56 @@ body {
     .logo h1 {
         font-size: 40px;
     }
+
+    .nav-menu ul {
+        gap: 29px;
+    }
+
+    .nav-menu ul li a {
+        font-size: 23px;
+    }
+
+    .social-media-icons {
+        flex-direction: row ;
+        gap: 10px;
+    }
+
+    .social-media-icons a {
+        font-size: 1.5em;
+    }
+
+    .info-container {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0;
+        font-size: 16px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .logo h1 {
         font-size: 45px;
+    }
+
+    .nav-menu ul {
+        gap: 45px;
+    }
+
+    .nav-menu ul li a {
+        font-size: 25px;
+    }
+
+    .footer-title {
+        font-size: 27px;
+    }
+
+    .social-media-icons {
+        flex-direction: row ;
+        gap: 10px;
+    }
+
+    .social-media-icons a {
+        font-size: 1.6em;
     }
 }
