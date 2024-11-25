@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .item-container {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -5,7 +8,7 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 50px;
 }
 
 .text-and-image-container {
@@ -14,8 +17,8 @@
   align-items: center;
   justify-content: space-around;
   border: 2px solid rgb(193, 158, 158);
-  border-radius: 10px;
   width: 100%;
+  box-sizing: border-box;
   background-color: antiquewhite;
   height: 350px;
   margin-top: 20px;
@@ -30,5 +33,97 @@
 
 .text-item {
   font-size: 25px;
-  padding-left: 100px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #image-item {
+    height: 180px;
+    margin-bottom: 10px;
+  }
+
+  .text-item {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .text-and-image-container {
+    flex-flow: column wrap;
+    height: auto;
+    justify-content: center;
+  }
+
+  #image-item {
+    height: 200px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+  }
+
+  .text-item {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 781px) {
+  .text-and-image-container {
+    flex-flow: row nowrap;
+    height: 300px;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  #image-item {
+    height: 220px;
+  }
+
+  .text-item {
+    font-size: 22px;
+    padding-left: 50px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .text-and-image-container {
+    flex-flow: row nowrap;
+    height: 350px;
+    padding: 30px;
+  }
+
+  #image-item {
+    height: 250px;
+  }
+
+  .text-item {
+    font-size: 24px;
+    padding-left: 80px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .text-and-image-container {
+    flex-flow: row nowrap;
+    height: 350px;
+    padding: 30px;
+  }
+
+  #image-item {
+    height: 250px;
+  }
+
+  .text-item {
+    font-size: 25px;
+    padding-left: 100px;
+  }
 }
