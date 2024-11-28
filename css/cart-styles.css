@@ -1,0 +1,20 @@
+.cart-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-item button {
+  background-color: #ea48cc;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
