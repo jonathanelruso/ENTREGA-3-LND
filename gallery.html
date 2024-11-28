@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrarse</title>
-    <link rel="stylesheet" href="css/form-styles.css">
+    <title>Catálogo</title>
     <link rel="stylesheet" href="css/header-and-footer-styles.css">
+    <link rel="stylesheet" href="css/gallery-styles.css">
     <script src="https://kit.fontawesome.com/f8e3d11e14.js" crossorigin="anonymous"></script>
 </head>
 
@@ -21,35 +21,54 @@
         <nav class="nav-menu">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="gallery.html">Catálogo</a></li>
+                <li><a href="#about">Catálogo</a></li>
                 <li><a href="#services">Servicios</a></li>
                 <li><a href="#contact">Carrito</a></li>
+                <li><a href="form.html">Registrarse</a></li>
             </ul>
         </nav>
     </header>
-    <div class="upper-form-container">
-        <div class="form-container">
-            <h2>Formulario de Registro</h2>
-            <form action="show-data.html" id="personal-data-form">
-                <label for="name">Nombre:</label>
-                <input type="text" name="name" id="name">
-                <span id="form-name" style="visibility: hidden;">* campo requerido</span>
-
-                <label for="surname">Apellidos:</label>
-                <input type="text" name="surname" id="surname">
-                <span id="form-surname" style="visibility: hidden;">* campo requerido</span>
-
-                <label for="email">Correo electrónico:</label>
-                <input type="email" name="email" id="email">
-                <span id="form-email" style="visibility: hidden;">* campo requerido</span>
-
-                <div class="form-submit">
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
+    <div class="gallery-container">
+        <h2>Galería de Armas Airsoft (Juguetes)</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/arma1.jpeg" data-name="USP" alt="USP">
+            </div>
+            <div class="gallery-item">
+                <img src="img/arma2.jpeg" data-name="F78" alt="F78">
+            </div>
+            <div class="gallery-item">
+                <img src="img/arma3.jpeg" data-name="M44" alt="M44">
+            </div>
+            <div class="gallery-item">
+                <img src="img/arma4.jpeg" data-name="Galil 45" alt="Galil 45">
+            </div>
+            <div class="gallery-item">
+                <img src="img/arma5.jpeg" data-name="M16" alt="M16">
+            </div>
+            <div class="gallery-item">
+                <img src="img/arma6.jpeg" data-name="UMP 45" alt="UMP 45">
+            </div>
+            <div class="gallery-item">
+                <img src="img/arma7.jpg" data-name="Thompson" alt=" Thompson">
+            </div>
+            <div class="gallery-item">
+                <img src="img/arma8.jpg" data-name="M4" alt="M4">
+            </div>
+            <div class="gallery-item">
+                <img src="img/arma9.jpg" data-name="AK47" alt="AK47">
+            </div>
+            <div class="gallery-item">
+                <img src="img/arma10.jpg" data-name="M4A1" alt="M4A1">
+            </div>
+            <div class="gallery-item">
+                <img src="img/arma11.jpg" data-name="PPSH" alt="PPSH">
+            </div>
+            <div class="gallery-item">
+                <img src="img/arma12.jpg" data-name="STG 44" alt="STG 44">
+            </div>
         </div>
     </div>
-
     <footer>
         <span class="footer-title">Canary Airsoft</span>
         <ul class="social-media-icons">
@@ -90,7 +109,6 @@
         <p>&copy; Canary Airsoft 2024</p>
     </footer>
     <script src="js/toggle-menu.js"></script>
-    <script src="js/validate.js"></script>
 </body>
 
 </html>
