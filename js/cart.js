@@ -1,77 +1,75 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const cartContainer = document.getElementById('cart-items');
-    const cartTotal = document.getElementById('cart-total');
-    const clearCartButton = document.getElementById('clear-cart');
-    const galleryItems = document.querySelectorAll('.gallery-item img');
-  
-    const loadCart = () => {
-      const cart = JSON.parse(localStorage.getItem('cart')) || [];
-      renderCart(cart);
-    };
-  
-    const saveCart = (cart) => {
-      localStorage.setItem('cart', JSON.stringify(cart));
-    };
-  
-    const renderCart = (cart) => {
-      cartContainer.innerHTML = '';
-      let total = 0;
-  
-      cart.forEach((item, index) => {
-        const itemElement = document.createElement('div');
-        itemElement.classList.add('cart-item');
-        itemElement.innerHTML = `
+  const CART_CONTAINER = document.getElementById('cart-items');
+  const CART_TOTAL = document.getElementById('cart-total');
+  const CLEAR_CART_BUTTON = document.getElementById('clear-cart');
+  const GALLERY_ITEMS = document.querySelectorAll('.gallery-item img');
+
+  const loadCart = () => {
+    const CART = JSON.parse(localStorage.getItem('cart')) || [];
+    renderCart(CART);
+  };
+
+  const saveCart = (cart) => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  };
+
+  const renderCart = (cart) => {
+    CART_CONTAINER.innerHTML = '';
+    let total = 0;
+
+    cart.forEach((item, index) => {
+      const ITEM_ELEMENT = document.createElement('div');
+      ITEM_ELEMENT.classList.add('cart-item');
+      ITEM_ELEMENT.innerHTML = `
           <span>${item.name}</span>
-          <span>$${item.price}</span>
-          <button data-index="${index}">Remove</button>
+          <span>€${item.price}</span>
+          <button data-index="${index}">Eliminar producto</button>
         `;
-        cartContainer.appendChild(itemElement);
-        total += parseFloat(item.price);
-      });
-  
-      cartTotal.textContent = total.toFixed(2);
-  
-      const deleteButtons = cartContainer.querySelectorAll('button');
-      deleteButtons.forEach((button) => {
-        button.addEventListener('click', (e) => {
-          const index = e.target.dataset.index;
-          cart.splice(index, 1);
-          saveCart(cart);
-          renderCart(cart);
-        });
-      });
-    };
-  
-    const addToCart = (name, price) => {
-      const cart = JSON.parse(localStorage.getItem('cart')) || [];
-      cart.push({ name, price });
-      saveCart(cart);
-      renderCart(cart);
-    };
-  
-    galleryItems.forEach((item) => {
-      item.addEventListener('click', () => {
-        const name = item.dataset.name;
-        const price = item.dataset.price;
-  
-        // Alerta de confirmación
-        const confirmAdd = window.confirm(`¿Quieres añadir el producto "${name}" al carrito por $${price}?`);
-        if (confirmAdd) {
-          addToCart(name, price);
-          alert(`¡El producto "${name}" ha sido añadido al carrito!`);
-        }
+      CART_CONTAINER.appendChild(ITEM_ELEMENT);
+      total += parseFloat(item.price);
+    });
+
+    CART_TOTAL.textContent = total.toFixed(2);
+
+    const DELETE_BUTTONS = CART_CONTAINER.querySelectorAll('button');
+    DELETE_BUTTONS.forEach((button) => {
+      button.addEventListener('click', (e) => {
+        const INDEX = e.target.dataset.index;
+        cart.splice(INDEX, 1);
+        saveCart(cart);
+        renderCart(cart);
       });
     });
-  
-    clearCartButton.addEventListener('click', () => {
-      const confirmClear = window.confirm('¿Estás seguro de que quieres vaciar el carrito?');
-      if (confirmClear) {
-        localStorage.removeItem('cart');
-        renderCart([]);
-        alert('El carrito ha sido vaciado.');
+  };
+
+  const addToCart = (name, price) => {
+    const CART = JSON.parse(localStorage.getItem('cart')) || [];
+    CART.push({ name, price });
+    saveCart(CART);
+    renderCart(CART);
+  };
+
+  GALLERY_ITEMS.forEach((item) => {  
+    item.addEventListener('click', () => {
+      const NAME = item.dataset.name;
+      const PRICE = item.dataset.price;
+
+      const CONFIRM_ADD = window.confirm(`¿Quieres añadir el producto "${NAME}" al carrito por €${PRICE}?`);
+      if (CONFIRM_ADD) {
+        addToCart(NAME, PRICE);
+        alert(`¡El producto "${NAME}" ha sido añadido al carrito!`);
       }
     });
-  
-    loadCart();
   });
-  
+
+  CLEAR_CART_BUTTON.addEventListener('click', () => {
+    const CONFIRM_CLEAR = window.confirm('¿Estás seguro de que quieres vaciar el carrito?');
+    if (CONFIRM_CLEAR) {
+      localStorage.removeItem('cart');
+      renderCart([]);
+      alert('El carrito ha sido vaciado.');
+    }
+  });
+
+  loadCart();
+});
