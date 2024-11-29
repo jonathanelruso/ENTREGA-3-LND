@@ -25,7 +25,7 @@ body {
   margin-bottom: 20px;
 }
 
-#image-item {
+.image-item {
   border: solid black;
   border-radius: 10px;
   height: 250px;
@@ -37,7 +37,7 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #image-item {
+  .image-item {
     height: 180px;
     margin-bottom: 10px;
   }
@@ -59,7 +59,7 @@ body {
     justify-content: center;
   }
 
-  #image-item {
+  .image-item {
     height: 200px;
     margin-bottom: 15px;
     margin-top: 40px;
@@ -82,7 +82,7 @@ body {
     padding: 20px;
   }
 
-  #image-item {
+  .image-item {
     height: 220px;
   }
 
@@ -100,7 +100,7 @@ body {
     padding: 30px;
   }
 
-  #image-item {
+  .image-item {
     height: 250px;
   }
 
@@ -118,7 +118,7 @@ body {
     padding: 30px;
   }
 
-  #image-item {
+  .image-item {
     height: 250px;
   }
 

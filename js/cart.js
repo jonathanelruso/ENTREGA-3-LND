@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCart(CART);
   };
 
-  GALLERY_ITEMS.forEach((item) => {  
+  GALLERY_ITEMS.forEach((item) => {
     item.addEventListener('click', () => {
       const NAME = item.dataset.name;
       const PRICE = item.dataset.price;
