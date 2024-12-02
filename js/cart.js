@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (CONFIRM_CLEAR) {
       localStorage.removeItem('cart');
       renderCart([]);
-      alert('El carrito ha sido vaciado.');
+      alert('El carrito esta vacío.');
     }
   });
 
