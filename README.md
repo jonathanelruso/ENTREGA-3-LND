@@ -32,6 +32,7 @@ Inspiration, code snippets, etc.
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
 * [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 * [FontAwesome](https://fontawesome.com/)
+* [Animista](https://animista.net/)
 * [JavaScript-Video](https://youtu.be/Kl6LKf85evg?si=BHC6BF_PYAD0LwZS)
 * [Cart](https://github.com/toto0087/carrito-compras-localStorage)
 * [This book](https://www.amazon.es/Curso-desarrollo-Web-JavaScript-Edici%C3%B3n/dp/844154414X)
