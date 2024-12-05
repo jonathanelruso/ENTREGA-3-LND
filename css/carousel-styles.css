@@ -1,31 +1,54 @@
 .carousel-container {
-    width: 100%;
-    overflow: hidden;
-    margin: 50px 0;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
 }
 
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .carousel-wrapper {
-    display: flex;
-    transition: transform 1s ease;
+  display: flex;
+  transition: transform 1s ease;
 }
 
 .carousel-item {
-    min-width: 100%; /* Usamos 100% para que cada imagen ocupe todo el ancho del contenedor */
-    padding: 0; /* Eliminamos el padding para reducir el espacio entre las imágenes */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-width: 100%; /* Uso 100% para que cada imagen ocupe todo el ancho del contenedor */
+  padding: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-image {
-    max-width: 100%; /* Las imágenes no excederán el tamaño del contenedor */
-    max-height: 300px; /* Limita la altura de las imágenes */
-    object-fit: contain; /* Mantiene la relación de aspecto */
-    transition: transform 1s ease;
+  object-fit: contain; /* Mantiene la relación de aspecto */
+  border: 5px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(#ea48cc, #f40448) padding-box;
+  background: linear-gradient(#ea48cc, #f40448) border-box ;
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h3 {
+    font-size: 25px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  h3 {
+    font-size: 27px;
+  }
 }

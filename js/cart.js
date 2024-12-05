@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const ITEM_ELEMENT = document.createElement('div');
       ITEM_ELEMENT.classList.add('cart-item');
       ITEM_ELEMENT.innerHTML = `
-          <span>${item.name}</span>
-          <span>€${item.price}</span>
+          <div>${item.name}</div>
+          <div>€${item.price}</div>
           <button data-index="${index}">Eliminar producto</button>
         `;
       CART_CONTAINER.appendChild(ITEM_ELEMENT);

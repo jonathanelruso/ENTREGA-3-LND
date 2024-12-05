@@ -39,4 +39,8 @@ function saveData(name, surname, email) {
     localStorage.setItem("email", email);
 }
 
+function showDataInsteadOfRegisterButton(){
+    
+}
+
 listenForValidation();

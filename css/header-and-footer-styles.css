@@ -9,6 +9,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+#loquesea {
+  display: none;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
