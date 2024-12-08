@@ -7,7 +7,7 @@
 }
 
 .carousel-container-title {
-  text-align: center; 
+  text-align: center;
   margin: 20px;
 }
 
@@ -17,53 +17,55 @@
 }
 
 .carousel-item {
-  min-width: 100%; /* Uso 100% para que cada imagen ocupe todo el ancho del contenedor */
-  padding: 0; 
+  min-width: 100%;
+  /* Uso 100% para que cada imagen ocupe todo el ancho del contenedor */
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .carousel-image {
-  object-fit: contain; /* Mantiene la relación de aspecto */
+  object-fit: contain;
+  /* Mantiene la relación de aspecto */
   border: 5px solid transparent;
   border-radius: 10px;
   background: linear-gradient(#ea48cc, #f40448) padding-box;
-  background: linear-gradient(#ea48cc, #f40448) border-box ;
+  background: linear-gradient(#ea48cc, #f40448) border-box;
 
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .carousel-container-title{
+  .carousel-container-title {
     font-size: 18px;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .carousel-container-title{
+  .carousel-container-title {
     font-size: 21px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .carousel-container-title{
+  .carousel-container-title {
     font-size: 23px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .carousel-container-title{
+  .carousel-container-title {
     font-size: 24px;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .carousel-container-title{
+  .carousel-container-title {
     font-size: 25px;
   }
 }

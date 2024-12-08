@@ -107,7 +107,7 @@ footer ul li a:hover {
   color: #a5a3a3;
 }
 
-footer > p {
+footer>p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -127,12 +127,14 @@ footer > p {
 .social-media-icons a:hover {
   color: #fff;
 }
+
 .info-container {
   display: flex;
   flex-flow: row wrap;
   gap: 0;
   font-size: 12px;
 }
+
 .info-container {
   display: flex;
   justify-content: center;
@@ -144,6 +146,7 @@ footer > p {
   font-size: 0.9em;
   color: #949393;
 }
+
 /* Animación de apertura de menú*/
 @-webkit-keyframes scale-in-ver-top {
   0% {
@@ -245,8 +248,7 @@ footer > p {
     opacity: 1;
     transform: scaleY(1);
     pointer-events: all;
-    animation: scale-in-ver-top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
-      forwards;
+    animation: scale-in-ver-top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
   }
 
   .nav-menu.closing {
@@ -254,8 +256,7 @@ footer > p {
     transform: scaleY(0);
     /* Escala hacia arriba (ocultar) */
     pointer-events: none;
-    animation: scale-out-ver-top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
-      forwards;
+    animation: scale-out-ver-top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
   }
 
   .nav-menu ul {
@@ -336,8 +337,7 @@ footer > p {
     transform: scaleY(1);
     /* Escala hacia abajo (mostrar) */
     pointer-events: all;
-    animation: scale-in-ver-top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
-      forwards;
+    animation: scale-in-ver-top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
   }
 
   .nav-menu.closing {
@@ -345,8 +345,7 @@ footer > p {
     transform: scaleY(0);
     /* Escala hacia arriba (ocultar) */
     pointer-events: none;
-    animation: scale-out-ver-top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
-      forwards;
+    animation: scale-out-ver-top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
   }
 
   .nav-menu ul {

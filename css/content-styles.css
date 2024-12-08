@@ -90,7 +90,7 @@ body {
     border-radius: 5px;
   }
 
-  .second-container-title{
+  .second-container-title {
     font-size: 18px;
   }
 }
@@ -129,7 +129,7 @@ body {
     border-radius: 5px;
   }
 
-  .second-container-title{
+  .second-container-title {
     font-size: 21px;
   }
 }
@@ -152,7 +152,7 @@ body {
     padding-left: 50px;
   }
 
-  .second-container-title{
+  .second-container-title {
     font-size: 23px;
   }
 
@@ -178,7 +178,7 @@ body {
     padding-left: 80px;
   }
 
-  .second-container-title{
+  .second-container-title {
     font-size: 24px;
   }
 
@@ -203,7 +203,7 @@ body {
     font-size: 25px;
     padding-left: 100px;
   }
-  
+
   .second-container {
     display: flex;
     flex-flow: row wrap;
@@ -211,13 +211,13 @@ body {
     gap: 60px;
     margin-bottom: 75px;
   }
-  
+
   .second-items {
     width: 25vw;
     height: 32vh;
   }
 
-  .second-container-title{
+  .second-container-title {
     font-size: 25px;
   }
 }

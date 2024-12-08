@@ -1,110 +1,110 @@
     .upper-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-  
-  .container {
-    width: 80vw;
-    border-radius: 15px;
-    padding: 30px;
-  }
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
 
-  h1 {
-    text-align: center;
-    margin: 1em 0;
-    font-size: 2em;
-  }
-  
-  .data-container {
-    width: 90%;
-    border: 2px black;
-    border-radius: 5px;
-    border: solid;
-    padding: 1em;
-    margin: 2em 0;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
-  }
-  
-  .data-item {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1em;
-    padding: 0.5em 0;
-  }
-  
-  .data-label {
-    font-weight: bold;
-    width: 30%;
-  }
-  
-  .data-value {
-    width: 65%;
-    padding: 0.5em;
-    background-color: var(--input-color);
-    border-radius: 3px;
-    border-bottom: 1px solid black;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-  .footer-container {
-    text-align: center;
-    height: 89.5px;
-    margin-bottom: 0;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
-    .upper-container {
-      transform: scale(0.97);
-      margin-top: 0px;
-      margin-bottom: 0px;
+    .container {
+      width: 80vw;
+      border-radius: 15px;
+      padding: 30px;
     }
 
     h1 {
-      font-size: 25px;
-    }
-  }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-    .upper-container {
-      transform: scale(0.94);
+      text-align: center;
+      margin: 1em 0;
+      font-size: 2em;
     }
 
-    h1 {
-      font-size: 27px;
+    .data-container {
+      width: 90%;
+      border: 2px black;
+      border-radius: 5px;
+      border: solid;
+      padding: 1em;
+      margin: 2em 0;
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
     }
-  }
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    .upper-container {
-      transform: scale(0.96);
+
+    .data-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1em;
+      padding: 0.5em 0;
     }
-  }
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .upper-container {
-      transform: scale(0.97);
+
+    .data-label {
+      font-weight: bold;
+      width: 30%;
     }
-  }
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .upper-container {
-      transform: scale(1);
-      padding: 0px;
+
+    .data-value {
+      width: 65%;
+      padding: 0.5em;
+      background-color: var(--input-color);
+      border-radius: 3px;
+      border-bottom: 1px solid black;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
     }
-  }
+
+    .footer-container {
+      text-align: center;
+      height: 89.5px;
+      margin-bottom: 0;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      .upper-container {
+        transform: scale(0.97);
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      .upper-container {
+        transform: scale(0.94);
+      }
+
+      h1 {
+        font-size: 27px;
+      }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      .upper-container {
+        transform: scale(0.96);
+      }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      .upper-container {
+        transform: scale(0.97);
+      }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+      .upper-container {
+        transform: scale(1);
+        padding: 0px;
+      }
+    }
