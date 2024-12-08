@@ -35,7 +35,7 @@ Inspiration, code snippets, etc.
 * [Animista](https://animista.net/)
 * [JavaScript-Video](https://youtu.be/Kl6LKf85evg?si=BHC6BF_PYAD0LwZS)
 * [Cart](https://github.com/toto0087/carrito-compras-localStorage)
-* [Resonsive Navbar](https://youtu.be/GdrbE-s5DgQ?si=gIkD_9sB9EBzek_P)
+* [Responsive Navbar](https://youtu.be/GdrbE-s5DgQ?si=gIkD_9sB9EBzek_P)
 * [This book](https://www.amazon.es/Curso-desarrollo-Web-JavaScript-Edici%C3%B3n/dp/844154414X)
 * https://github.com/DerLop/Formulario-de-Registro/blob/master/js/app.js
 * My teacher Tiburcio Cruz
