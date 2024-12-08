@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
 }
+
 .item-container {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -9,6 +10,32 @@ body {
   justify-content: center;
   align-items: center;
   gap: 50px;
+}
+
+.second-container-title {
+  margin-bottom: 35px;
+  font-size: 21px;
+  text-align: center;
+}
+
+.second-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 75px;
+}
+
+.second-items {
+  width: 25vw;
+  height: 32vh;
+  border: 2px solid;
+  border-radius: 5px;
+  text-align: center;
+  align-content: center;
+  padding: 21px;
+  font-size: 25px;
+  background: linear-gradient(beige, blanchedalmond);
 }
 
 .text-and-image-container {
@@ -49,6 +76,23 @@ body {
     text-align: center;
 
   }
+
+  .second-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .second-items {
+    width: 70vw;
+    height: 23vh;
+    border: 2px solid;
+    border-radius: 5px;
+  }
+
+  .second-container-title{
+    font-size: 18px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -71,6 +115,23 @@ body {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .second-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .second-items {
+    width: 60vw;
+    height: 24vh;
+    border: 2px solid;
+    border-radius: 5px;
+  }
+
+  .second-container-title{
+    font-size: 21px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -90,6 +151,14 @@ body {
     font-size: 22px;
     padding-left: 50px;
   }
+
+  .second-container-title{
+    font-size: 23px;
+  }
+
+  .second-items {
+    height: 24vh;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -108,6 +177,14 @@ body {
     font-size: 24px;
     padding-left: 80px;
   }
+
+  .second-container-title{
+    font-size: 24px;
+  }
+
+  .second-items {
+    height: 25vh;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -125,5 +202,22 @@ body {
   .text-item {
     font-size: 25px;
     padding-left: 100px;
+  }
+  
+  .second-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 75px;
+  }
+  
+  .second-items {
+    width: 25vw;
+    height: 32vh;
+  }
+
+  .second-container-title{
+    font-size: 25px;
   }
 }
