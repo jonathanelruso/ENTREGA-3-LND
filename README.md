@@ -4,7 +4,7 @@ This airsoft gun shop is my first website proyect.
 
 ## Description
 
-At the moment, you can only view a gallery of airsoft guns, along with the website's header and footer.
+At the moment, Canary Airsoft has an airsoft gun gallery to see different guns, a shopping cart to buy them, and a registration form to create an account.
 
 ## Getting Started
 
@@ -12,7 +12,7 @@ At the moment, you can only view a gallery of airsoft guns, along with the websi
 
 The project was developed on Windows 11 and ChromeOS operating systems.
 
-Additionally, the project was developed with Visual Studio Code IDE.
+Additionally, the project was developed with Visual Studio Code.
 
 Finally, my website is based on this example: dribbble.com/shots/24206270-Chanta-Backpack-Store-Category
 
